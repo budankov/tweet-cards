@@ -1,0 +1,86 @@
+[
+  {
+    "user": "Elon Musk",
+    "tweets": 41,
+    "followers": 100500,
+    "avatar": "https://i.ibb.co/dWRfNPm/1.jpg",
+    "id": "1"
+  },
+  {
+    "user": "Jeff Bezos",
+    "tweets": 89,
+    "followers": 91012,
+    "avatar": "https://i.ibb.co/fn8JjyX/2.jpg",
+    "id": "2"
+  },
+  {
+    "user": "Bill Gates",
+    "tweets": 61,
+    "followers": 214555,
+    "avatar": "https://i.ibb.co/NS6yjrV/3.jpg",
+    "id": "3"
+  },
+  {
+    "user": "Mark Zuckerberg",
+    "tweets": 9,
+    "followers": 331451,
+    "avatar": "https://i.ibb.co/h2rdsJR/4.jpg",
+    "id": "4"
+  },
+  {
+    "user": "Warren Buffett",
+    "tweets": 89,
+    "followers": 244522,
+    "avatar": "https://i.ibb.co/bKpW4S8/5.jpg",
+    "id": "5"
+  },
+  {
+    "user": "Tim Cook",
+    "tweets": 79,
+    "followers": 245231,
+    "avatar": "https://i.ibb.co/k6cpx1D/6.jpg",
+    "id": "6"
+  },
+  {
+    "user": "Larry Page",
+    "tweets": 75,
+    "followers": 145921,
+    "avatar": "https://i.ibb.co/0mZYYM2/7.jpg",
+    "id": "7"
+  },
+  {
+    "user": "Sundar Pichai",
+    "tweets": 65,
+    "followers": 245810,
+    "avatar": "https://i.ibb.co/6Ygdfp1/8.jpg",
+    "id": "8"
+  },
+  {
+    "user": "Elon Musk",
+    "tweets": 26,
+    "followers": 149555,
+    "avatar": "https://i.ibb.co/GxxW128/9.jpg",
+    "id": "9"
+  },
+  {
+    "user": "Jack Ma",
+    "tweets": 16,
+    "followers": 142444,
+    "avatar": "https://i.ibb.co/sm3NsyV/10.jpg",
+    "id": "10"
+  },
+  {
+    "user": "Satya Nadella",
+    "tweets": 28,
+    "followers": 3145668,
+    "avatar": "https://i.ibb.co/cwXVbsW/11.jpg",
+    "id": "11"
+  },
+  {
+    "user": "Reed Hastings",
+    "tweets": 28,
+    "followers": 152357,
+    "avatar": "https://i.ibb.co/2SVqrgH/12.jpg",
+    "id": "12"
+  }
+]

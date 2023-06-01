@@ -1,7 +1,9 @@
+import TweetsList from 'components/TweetsList/TweetsList';
+
 const TweetsPage = () => {
   return (
     <div>
-      <p>Welcome to Home Page</p>
+      <TweetsList />
     </div>
   );
 };
