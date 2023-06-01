@@ -1,6 +1,7 @@
 import { lazy, Suspense } from 'react';
-import { Routes, Route, Outlet, Link } from 'react-router-dom';
+import { Routes, Route, Outlet } from 'react-router-dom';
 
+import AppBar from 'components/AppBar/AppBar';
 import Loader from 'components/Loader';
 
 const HomePage = lazy(() => import('./pages/HomePage'));
@@ -9,10 +10,7 @@ const TweetsPage = lazy(() => import('./pages/TweetsPage'));
 const App = () => {
   return (
     <Suspense fallback={<Loader />}>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/tweets">Tweets</Link>
-      </nav>
+      <AppBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/tweets" element={<TweetsPage />} />

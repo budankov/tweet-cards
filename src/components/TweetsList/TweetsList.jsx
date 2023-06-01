@@ -6,13 +6,11 @@ import styles from './TweetsList.module.scss';
 
 const TweetsList = () => {
   return (
-    <div className={styles.tweetsListContainer}>
-      <ul className={`${styles.tweetsList}`}>
-        {user.map(({ id, ...props }) => (
-          <TweetsItem key={id} id={id} {...props} />
-        ))}
-      </ul>
-    </div>
+    <ul className={`${styles.tweetsList}`}>
+      {user.map(({ id, ...props }) => (
+        <TweetsItem key={id} id={id} {...props} />
+      ))}
+    </ul>
   );
 };
 

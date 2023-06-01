@@ -2,7 +2,7 @@ import TweetsList from 'components/TweetsList/TweetsList';
 
 const TweetsPage = () => {
   return (
-    <div>
+    <div className="container">
       <TweetsList />
     </div>
   );
