@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 
+import './AppBar.module.scss';
+
 const AppBar = () => {
   return (
     <nav>
