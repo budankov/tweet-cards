@@ -1,7 +1,8 @@
 .nav__container {
   display: flex;
   justify-content: center;
-  background-color: aqua;
+  background: #ebd8ff;
+  box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
   padding: 20px 0px;
 
   @media screen and (max-width: 768px) {
@@ -32,13 +33,32 @@
 
 .nav__link {
   font-size: 26px;
-  color: green;
+  color: #373737;
   text-decoration: none;
   transition: var(--timing);
+  position: relative;
 
-  &:hover,
-  &:focus {
-    color: #3097f8;
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #5cd3a8;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  &:focus,
+  &:hover {
+    color: #373737;
   }
 }
 
