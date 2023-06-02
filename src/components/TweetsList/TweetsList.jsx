@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import Notiflix from 'notiflix';
 
-import { getAllUsers } from '../shared/api/tweetsApi';
+import { getAllUsers } from 'shared/api/tweetsApi';
 import TweetsItem from 'components/TweetsItem/TweetsItem';
 import Button from 'components/Button/Button';
+import Loader from 'shared/components/Loader/Loader';
 
 import styles from './TweetsList.module.scss';
 
@@ -13,11 +14,14 @@ const TweetsList = () => {
   const [tweetsPerPage] = useState(3);
   const [displayedTweets, setDisplayedTweets] = useState([]);
   const [isLoadMoreClicked, setIsLoadMoreClicked] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     const fetchAllUsers = async () => {
+      setIsLoading(true);
       const fetchedUsers = await getAllUsers();
       setUsers(fetchedUsers);
+      setIsLoading(false);
     };
 
     fetchAllUsers();
@@ -46,8 +50,12 @@ const TweetsList = () => {
           <TweetsItem key={id} id={id} {...props} />
         ))}
       </ul>
-      {users.length > displayedTweets.length && (
-        <Button onClick={handleLoadMoreClick}>Load More</Button>
+      {isLoading ? (
+        <Loader />
+      ) : (
+        users.length > displayedTweets.length && (
+          <Button onClick={handleLoadMoreClick}>Load More</Button>
+        )
       )}
     </div>
   );

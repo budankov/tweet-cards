@@ -2,7 +2,7 @@ import { lazy, Suspense } from 'react';
 import { Routes, Route, Outlet } from 'react-router-dom';
 
 import AppBar from 'components/AppBar/AppBar';
-import Loader from 'components/Loader';
+import Loader from 'shared/components/Loader/Loader';
 
 const HomePage = lazy(() => import('./pages/HomePage'));
 const TweetsPage = lazy(() => import('./pages/TweetsPage'));
