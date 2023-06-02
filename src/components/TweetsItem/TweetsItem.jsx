@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Button from 'components/Button/Button';
 import { ReactComponent as GoIt } from '../../images/Logo.svg';
 import CardDecorImage from '../../images/card-pictures-decor.png';
 import styles from './TweetsItem.module.scss';
@@ -69,15 +70,15 @@ const TweetsItem = ({ id, user, tweets, followers, avatar }) => {
           <p className={styles.tweetItem__followers}>
             Followers: {followerCount.toLocaleString('en-US')}
           </p>
-          <button
+          <Button
             className={`${styles.tweetItem__button} ${
               following ? styles.following : ''
             }`}
             type="button"
             onClick={handleFollowClick}
           >
-            <span>{following ? 'Following' : 'Follow'}</span>
-          </button>
+            {following ? 'Following' : 'Follow'}
+          </Button>
         </div>
       </div>
     </li>

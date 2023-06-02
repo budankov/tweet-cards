@@ -61,20 +61,18 @@
   border: none;
   transition: var(--timing);
 
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #373737;
+
   &.following {
     background-color: #5cd3a8;
   }
 
   &:hover {
     box-shadow: 0px 4.43693px 4.43693px rgba(68, 250, 62, 0.493);
-  }
-
-  & span {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-    text-transform: uppercase;
-    color: #373737;
   }
 }
 

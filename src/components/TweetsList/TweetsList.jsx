@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { getAllUsers } from '../shared/api/tweetsApi';
-
 import TweetsItem from 'components/TweetsItem/TweetsItem';
+import Button from 'components/Button/Button';
 import styles from './TweetsList.module.scss';
 
 const TweetsList = () => {
@@ -37,9 +37,7 @@ const TweetsList = () => {
         ))}
       </ul>
       {users.length > displayedTweets.length && (
-        <button className={styles.loadMoreButton} onClick={handleLoadMoreClick}>
-          Load More
-        </button>
+        <Button onClick={handleLoadMoreClick}>Load More</Button>
       )}
     </div>
   );
