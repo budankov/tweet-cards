@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import Notiflix from 'notiflix';
+
 import Button from 'components/Button/Button';
 import { ReactComponent as GoIt } from '../../images/Logo.svg';
 import CardDecorImage from '../../images/card-pictures-decor.png';
+
 import styles from './TweetsItem.module.scss';
 
 const TweetsItem = ({ id, user, tweets, followers, avatar }) => {
@@ -40,6 +43,12 @@ const TweetsItem = ({ id, user, tweets, followers, avatar }) => {
         followerCount: updatedFollowerCount,
       };
       localStorage.setItem(localStorageKey, JSON.stringify(updatedData));
+
+      if (updatedFollowing) {
+        Notiflix.Notify.success('You are successfully following!');
+      } else {
+        Notiflix.Notify.info('You have successfully unsubscribed!');
+      }
     } else {
       setFollowing(true);
       setFollowerCount(prevCount => prevCount + 1);
