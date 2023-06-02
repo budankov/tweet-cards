@@ -61,10 +61,12 @@
   border: none;
   transition: var(--timing);
 
-  &:hover,
-  &:focus {
-    background-color: #dec2fd;
-    box-shadow: 0px 4.43693px 4.43693px rgba(0, 0, 0, 0.493);
+  &.following {
+    background-color: #5cd3a8;
+  }
+
+  &:hover {
+    box-shadow: 0px 4.43693px 4.43693px rgba(68, 250, 62, 0.493);
   }
 
   & span {
