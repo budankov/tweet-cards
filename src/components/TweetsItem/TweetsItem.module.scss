@@ -3,8 +3,8 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  width: 380px;
-  height: 460px;
+  width: 280px;
+  height: 360px;
   list-style: none;
   background: linear-gradient(
     114.99deg,
@@ -17,6 +17,11 @@
   padding: 28px 36px 36px 36px;
 
   position: relative;
+
+  @media screen and (min-width: 768px) {
+    width: 380px;
+    height: 460px;
+  }
 }
 .tweetItem__icon {
   position: absolute;
@@ -29,32 +34,57 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 308px;
-  height: 396px;
+  width: 208px;
+  height: 296px;
+
+  @media screen and (min-width: 768px) {
+    width: 308px;
+    height: 396px;
+  }
 }
 .tweetItem__image {
-  margin-bottom: 18px;
+  margin-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 18px;
+  }
+
+  & img {
+    @media screen and (max-width: 768px) {
+      width: 196px;
+    }
+  }
 }
+
 .tweetItem__avatar {
-  width: 62px;
-  height: 62px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
+
+  @media screen and (min-width: 768px) {
+    width: 62px;
+    height: 62px;
+  }
 }
 .tweetItem__tweets,
 .tweetItem__followers {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
   color: #ebd8ff;
   padding-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
 }
 .tweetItem__followers {
   padding-bottom: 26px;
 }
 .tweetItem__button {
-  width: 196px;
-  height: 50px;
+  width: 126px;
+  height: 30px;
   background-color: #ebd8ff;
   box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
   border-radius: 10.3108px;
@@ -62,7 +92,7 @@
   transition: var(--timing);
 
   font-weight: 600;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 22px;
   text-transform: uppercase;
   color: #373737;
@@ -74,34 +104,56 @@
   &:hover {
     box-shadow: 0px 4.43693px 4.43693px rgba(68, 250, 62, 0.493);
   }
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    width: 196px;
+    height: 50px;
+  }
 }
 
 .decorationElement {
   position: relative;
-  margin-bottom: 62px;
+  margin-bottom: 50px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 62px;
+  }
 }
 .decorationElement__line {
-  width: 380px;
-  height: 8px;
+  width: 280px;
+  height: 4px;
   left: 0px;
   top: 214px;
   background: #ebd8ff;
   box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.06),
     inset 0px -1.71846px 3.43693px #ae7be3, inset 0px 3.43693px 2.5777px #fbf8ff;
+
+  @media screen and (min-width: 768px) {
+    width: 380px;
+    height: 8px;
+  }
 }
 .decorationElement__circle {
   position: absolute;
-  top: -40px;
-  left: 160px;
+  top: -28px;
+  left: 110px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   background: #ebd8ff;
   box-shadow: 0px 4.39163px 4.39163px rgba(0, 0, 0, 0.06),
     inset 0px -2.19582px 4.39163px #ae7be3,
     inset 0px 4.39163px 3.29372px #fbf8ff;
   border-radius: 50%;
   overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    width: 80px;
+    height: 80px;
+    top: -40px;
+    left: 160px;
+  }
 }

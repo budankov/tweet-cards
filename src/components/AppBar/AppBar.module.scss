@@ -1,9 +1,9 @@
 .nav__container {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   background: #ebd8ff;
   box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
-  padding: 20px 0px;
 
   @media screen and (max-width: 768px) {
     justify-content: left;
@@ -11,7 +11,7 @@
 }
 
 .menu__icon {
-  display: none; /* Початково ховаємо бургер-меню на десктопних розмірах */
+  display: none;
 }
 
 .nav__list {
@@ -23,10 +23,10 @@
   padding: 0;
   margin: 0;
   position: relative;
-  z-index: 30; /* Виводимо навігацію та закриття бургера поверх overlay */
+  z-index: 30;
+  padding: 20px 10px;
 
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
+  @media screen and (min-width: 1280px) {
     padding: 40px 20px;
   }
 }
