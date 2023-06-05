@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: center;
   background: #ebd8ff;
-  box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
+  box-shadow: var(--small-shadow);
 
   @media screen and (max-width: 768px) {
     justify-content: left;
@@ -45,7 +45,7 @@
     bottom: 0;
     width: 100%;
     height: 2px;
-    background-color: #5cd3a8;
+    background-color: var(--active-button);
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.5s;
@@ -63,7 +63,7 @@
 }
 
 .open {
-  display: flex; /* Показуємо навігацію, коли бургер-меню відкрите */
+  display: flex;
 }
 
 .overlay {
@@ -72,23 +72,23 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #f0f0f0; /* Колір фону overlay */
-  z-index: 20; /* Забезпечуємо виведення overlay під навігацією та закриттям бургера */
+  background-color: #f0f0f0;
+  z-index: 20;
 }
 
 @media screen and (max-width: 767px) {
   .menu__icon {
-    display: block; /* Показуємо бургер-меню при менших розмірах екрану */
+    display: block;
     cursor: pointer;
-    z-index: 30; /* Виводимо закриття бургера поверх overlay */
+    z-index: 30;
     position: relative;
   }
 
   .nav__list {
-    display: none; /* Ховаємо навігацію при менших розмірах екрану */
+    display: none;
   }
 
   .open {
-    display: flex; /* Показуємо навігацію, коли бургер-меню відкрите */
+    display: flex;
   }
 }

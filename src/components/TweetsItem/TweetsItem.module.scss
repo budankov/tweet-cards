@@ -6,13 +6,8 @@
   width: 280px;
   height: 360px;
   list-style: none;
-  background: linear-gradient(
-    114.99deg,
-    #471ca9 -0.99%,
-    #5736a3 54.28%,
-    #4b2a99 78.99%
-  );
-  box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
+  background: var(--gradient);
+  box-shadow: var(--small-shadow);
   border-radius: 20px;
   padding: 28px 36px 36px 36px;
 
@@ -72,7 +67,7 @@
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #ebd8ff;
+  color: var(--base-button);
   padding-bottom: 16px;
 
   @media screen and (min-width: 768px) {
@@ -85,7 +80,7 @@
 .tweetItem__button {
   width: 126px;
   height: 30px;
-  background-color: #ebd8ff;
+  background-color: var(--base-button);
   box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
   border-radius: 10.3108px;
   border: none;
@@ -98,11 +93,11 @@
   color: #373737;
 
   &.following {
-    background-color: #5cd3a8;
+    background-color: var(--active-button);
   }
 
   &:hover {
-    box-shadow: 0px 4.43693px 4.43693px rgba(68, 250, 62, 0.493);
+    box-shadow: var(--big-shadow);
   }
 
   @media screen and (min-width: 768px) {
@@ -125,7 +120,7 @@
   height: 4px;
   left: 0px;
   top: 214px;
-  background: #ebd8ff;
+  background: var(--base-button);
   box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.06),
     inset 0px -1.71846px 3.43693px #ae7be3, inset 0px 3.43693px 2.5777px #fbf8ff;
 
@@ -143,10 +138,8 @@
   align-items: center;
   width: 60px;
   height: 60px;
-  background: #ebd8ff;
-  box-shadow: 0px 4.39163px 4.39163px rgba(0, 0, 0, 0.06),
-    inset 0px -2.19582px 4.39163px #ae7be3,
-    inset 0px 4.39163px 3.29372px #fbf8ff;
+  background: var(--base-button);
+  box-shadow: var(--big-shadow);
   border-radius: 50%;
   overflow: hidden;
 

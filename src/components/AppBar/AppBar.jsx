@@ -12,11 +12,11 @@ const AppBar = () => {
   };
 
   const closeMenu = () => {
-    setMenuOpen(false); // Закриваємо бургер-меню
+    setMenuOpen(false);
   };
 
   useEffect(() => {
-    closeMenu(); // Закриваємо бургер-меню при зміні шляху маршруту
+    closeMenu();
   }, [location.pathname]);
 
   return (
